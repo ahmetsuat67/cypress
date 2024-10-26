@@ -47,7 +47,7 @@ const Details = () => {
             Calories: {Math.round(recipeDet.calories)}
           </p>
           {recipeDet.digest.slice(0, 4).map((item, index) => (
-            <p data-test={item.label + "test"} key={index}>
+            <p data-test={item.label+"test"} key={index}>
               {item.label}  : {Math.round(item.total)}
             </p>
           ))}
